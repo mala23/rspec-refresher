@@ -30,7 +30,12 @@ describe "Matchers" do
     expect(bool).to be true
   end
 
-  it "expects errors"
+  it "expects errors" do
+    expect do
+      raise ArgumentError
+   end.to raise_error
+  end
+  
   it "expects throws"
   it "asserts on predicates"
   it "asserts on collections"
