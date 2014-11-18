@@ -21,7 +21,15 @@ describe "Matchers" do
     expect(object).to be_a Numeric
   end
 
-  it "asserts on truthiness"
+  it "asserts on truthiness" do
+    bool = true
+    falsy_bool = false
+    nil_value = nil
+    object = Class.new
+
+    expect(bool).to be true
+  end
+
   it "expects errors"
   it "expects throws"
   it "asserts on predicates"
